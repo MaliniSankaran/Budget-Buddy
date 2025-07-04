@@ -1,5 +1,5 @@
 # Overview 
-Budget Buddy is a comprehensive financial management application developed using Java and JavaFX, with a robust backend powered by Oracle Database. The application addresses the common challenges of personal finance management through a user-friendly interface and powerful features.
+Budget Buddy is a comprehensive personal finance management application developed using Java and JavaFX, with a robust backend powered by Oracle Database. Designed with Object-Oriented Design (OOD) principles and the MVC architecture, Budget Buddy helps users track income and expenses, set and monitor financial goals, plan budgets, and gain actionable insights through reports and notifications—all within an intuitive user interface.
 
 ## Technology Stack
 
@@ -12,8 +12,7 @@ Budget Buddy is a comprehensive financial management application developed using
 
 # Key Components
 ## 1. User Authentication System
-- Implements secure login and signup functionality
-- Utilizes bcrypt for password hashing, ensuring user data protection
+- Secure login and signup with bcrypt password hashing for data protection
 ## 2. Database Structure
 - Employs multiple tables: Budget, Goal, Transactions, Transaction History, Reports, Notifications, and Users
 - Designed for efficient data retrieval and management
@@ -30,7 +29,16 @@ Budget Buddy is a comprehensive financial management application developed using
 ## 7. Notification System
 - Alerts users when expenses approach or exceed budget limits
 - Provides high expense alerts based on predefined thresholds
- 
+
+# Object-Oriented Design Highlights
+
+- **Class Structure:** Core classes include User, Transaction (with Income/Expense subclasses), Goal, Category, Budget, and Report.
+- **Polymorphism & Inheritance:** Unified handling of different transaction and goal types.
+- **Interfaces & Abstract Classes:** Shared logic for financial entities and trackable elements.
+- **Collections:** Efficient data management using lists, sets, and maps for transactions, goals, and categories.
+- **MVC Architecture:**
+The application follows the Model-View-Controller pattern, ensuring modularity, ease of maintenance, and clear separation of concerns.
+  
 # Database Integration
 The application uses Oracle SQL for persistent data storage. Required tables include:  
 - Users  
@@ -91,3 +99,6 @@ JavaFX is utilized to create a clean, intuitive interface that allows users to n
 ### Step 6: Running the Project
  - Locate Main.java
  - Right-click > Run As > Java Application
+   
+# Benefits
+Budget Buddy demonstrates strong OOD principles and delivers a practical, extensible solution for personal finance management. Its modular design supports future enhancements, such as bank API integration or advanced analytics, making it well-suited for real-world application.
