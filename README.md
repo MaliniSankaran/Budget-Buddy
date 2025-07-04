@@ -1,13 +1,14 @@
 # Overview 
 Budget Buddy is a comprehensive financial management application developed using Java and JavaFX, with a robust backend powered by Oracle Database. The application addresses the common challenges of personal finance management through a user-friendly interface and powerful features.
 
-# Technology Stack
-Frontend: JavaFX for creating an intuitive and responsive user interface
-Backend: Java for server-side logic and data processing
-Architecture: Model View Controller (MVC) for modularity and maintenance
-Database: Oracle SQL for data storage and management
-Authentication: bcrypt for secure password hashing and user authentication
-Data Access: JDBC for efficient database connectivity and operations
+## Technology Stack
+
+- **Frontend:** JavaFX for intuitive and responsive UI  
+- **Backend:** Java for server-side logic and data processing  
+- **Architecture:** Model View Controller (MVC) for modularity and maintenance  
+- **Database:** Oracle SQL for data storage and management  
+- **Authentication:** bcrypt for secure password hashing and user authentication  
+- **Data Access:** JDBC for efficient database connectivity and operations  
 
 # Key Components
 ## 1. User Authentication System
@@ -31,7 +32,14 @@ Data Access: JDBC for efficient database connectivity and operations
 - Provides high expense alerts based on predefined thresholds
  
 # Database Integration
-The application interacts with the Oracle database through JDBC, ensuring efficient data operations across all features. The database schema includes tables for users, budgets, categories, goals, and transactions, forming a comprehensive structure for financial data management.
+The application uses Oracle SQL for persistent data storage. Required tables include:  
+- Users  
+- Budget  
+- Goals  
+- Transactions  
+- TransactionHistory  
+- Reports  
+- Notifications
 
 # User Interface Design
 JavaFX is utilized to create a clean, intuitive interface that allows users to navigate easily between different sections of the application. The dashboard serves as the central hub, providing quick access to all features and a snapshot of the user's financial status.
